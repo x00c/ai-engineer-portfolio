@@ -51,7 +51,7 @@ export function Navbar() {
           aria-label="Open navigation menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((prev) => !prev)}
-          className="inline-flex h-12 w-12 items-center justify-center rounded-lg bg-zinc-100 text-zinc-900 transition-transform duration-200 hover:scale-[1.02]"
+          className="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-cyan-100/20 bg-slate-950/60 text-zinc-100 shadow-lg shadow-black/20 backdrop-blur-md transition-transform duration-200 hover:scale-[1.02] hover:bg-slate-900/75"
           title="Menu"
         >
           <Menu className="h-[18px] w-[18px]" />

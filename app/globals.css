@@ -69,6 +69,31 @@ body {
   background-size: 40px 40px;
 }
 
+/* Shared portfolio surface: keeps the checkerboard motif while giving the
+   hero content enough contrast to remain readable. */
+.portfolio-grid-surface {
+  background-color: #102a34;
+  background-image:
+    linear-gradient(
+      45deg,
+      #1b474b 25%,
+      transparent 25%,
+      transparent 75%,
+      #1b474b 75%,
+      #1b474b
+    ),
+    linear-gradient(
+      45deg,
+      #1b474b 25%,
+      #102a34 25%,
+      #102a34 75%,
+      #1b474b 75%,
+      #1b474b
+    );
+  background-size: 60px 60px;
+  background-position: 0 0, 30px 30px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

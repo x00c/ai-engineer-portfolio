@@ -45,14 +45,7 @@ export function Hero() {
   return (
     <section
       ref={stageRef}
-      className="relative h-[220vh]"
-      style={{
-        backgroundColor: "rgb(108, 231, 221)",
-        backgroundImage:
-          "linear-gradient(45deg, rgb(250, 255, 178) 25%, transparent 25%, transparent 75%, rgb(250, 255, 178) 75%, rgb(250, 255, 178)), linear-gradient(45deg, rgb(250, 255, 178) 25%, rgb(108, 231, 221) 25%, rgb(108, 231, 221) 75%, rgb(250, 255, 178) 75%, rgb(250, 255, 178))",
-        backgroundSize: "60px 60px",
-        backgroundPosition: "0 0, 30px 30px",
-      }}
+      className="portfolio-grid-surface relative h-[220vh]"
     >
       <div className="sticky top-0 h-screen overflow-hidden">
         {/* Marquees live OUTSIDE the scaling stage, on the section's black backdrop.
@@ -167,8 +160,8 @@ export function Hero() {
             transition={{ delay: 1.4, duration: 1.2 }}
             className="absolute bottom-10 left-1/2 z-20 -translate-x-1/2 flex flex-col items-center gap-2"
           >
-            <div className="flex items-center gap-2 rounded-full border border-neutral-200/50 bg-white/30 px-4 py-1.5 font-mono text-sm font-semibold uppercase tracking-[0.16em] text-neutral-600 backdrop-blur-md">
-              <span className="text-accent">&gt;</span>
+            <div className="flex items-center gap-2 rounded-full border border-cyan-200/30 bg-slate-950/55 px-4 py-1.5 font-mono text-sm font-semibold uppercase tracking-[0.16em] text-zinc-100 shadow-lg shadow-black/20 backdrop-blur-md">
+              <span className="text-cyan-300">&gt;</span>
               <span>{siteContent.hero.scrollPrompt}</span>
             </div>
             <motion.div
